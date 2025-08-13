@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>一頁式網站範本</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100">
+
+  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="navbar-inner h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center h-full">
+        <img src="LOGO-01.png" alt="網站 Logo" class="logo" />
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="#section1" class="text-gray-700 hover:text-blue-500">第一區</a>
+        <a href="#section2" class="text-gray-700 hover:text-blue-500">第二區</a>
+        <a href="#section3" class="text-gray-700 hover:text-blue-500">第三區</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="section1" class="pt-20">
+    <div class="slider-container">
+      <img src="1.jpg" alt="圖1" class="slide opacity-100" />
+      <img src="2.jpg" alt="圖2" class="slide opacity-0" />
+      <img src="3.jpg" alt="圖3" class="slide opacity-0" />
+    </div>
+
+    <div class="title-block mt-6 text-right">
+      <h1 class="text-4xl font-bold text-gray-900">這是主標題</h1>
+      <p class="text-lg text-gray-600 mt-2">這是副標題，簡短敘述內容或亮點</p>
+    </div>
+  </section>
+
+  <!-- 第二區段：地圖 + 圖片地標 -->
+<section id="section2" class="mt-16">
+    <div class="section2_title">龍潭著名地景地圖</div>
+  <div class="map-wrap">
+    <div class="map-canvas" aria-label="街區地圖">
+      <img src="map.png" alt="街區地圖" class="map-image"/>
+      <div class="pins" id="pins"></div>
+        <div class="map-intro">
+            菱潭街串連龍潭大池與周邊文化據點，形成水岸與老城交融的生活圈，
+            從文學園區到南天宮，每一步都能感受地方故事與日常溫度。
+        </div>
+    </div>
+  </div>
+
+  <!-- 詳情卡 -->
+  <div class="poi-detail" id="poiDetail" aria-hidden="true">
+    <button class="detail-close" id="detailClose" aria-label="關閉">×</button>
+    <img id="detailImg" class="detail-img" src="" alt="">
+    <h3 id="detailTitle" class="detail-title">—</h3>
+    <p id="detailDesc" class="detail-desc">點地標查看介紹。</p>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
