@@ -31,8 +31,12 @@ body {
   background: #f5f6f8;
 }
 
+nav {
+    height: 7vh;
+}
+
 section {
-    height: 90vh;
+    height: 93vh;
     width: 90vw;
     margin: auto;
 }
@@ -83,8 +87,8 @@ section {
   filter: drop-shadow(0 6px 10px rgba(0,0,0,.2));
 }
 .pin img {
-  width: 120px;
-  height: 72px;
+  width: 100px;
+  height: 50px;
   object-fit: cover;
   border-radius: 10px;
   border: 2px solid #fff;
