@@ -33,13 +33,13 @@ body {
 }
 
 nav {
-    height: 7vh;
-    line-height: 7vh;
+    height: 8vh;
+    line-height: 8vh;
     font-size: 12px;
 }
 
 section {
-    height: 93vh;
+    height: 92vh;
     width: 90vw;
     margin: auto;
     /* display: flex;
@@ -48,8 +48,8 @@ section {
 }
 
 .logo {
-    width: 150px;
-    height: 56px;
+    width: 140px;
+    height: 50px;
 }
 
 .section2_title {
@@ -280,6 +280,7 @@ section {
 .theme-abandon.fancy-title::after { background: linear-gradient(90deg, rgba(100,116,139,.45), rgba(71,85,105,.45)); }
 .theme-renew.fancy-title::after   { background: linear-gradient(90deg, rgba(34,197,94,.45), rgba(22,163,74,.45)); }
 .theme-now.fancy-title::after     { background: linear-gradient(90deg, rgba(59,130,246,.45), rgba(14,165,233,.45)); }
+
 
 
 
